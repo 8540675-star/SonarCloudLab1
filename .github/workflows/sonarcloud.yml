@@ -57,7 +57,7 @@ jobs:
           echo "$env:USERPROFILE\.dotnet\tools" >> $env:GITHUB_PATH
           dotnet sonarscanner begin `
           /k:"8540675-star_SonarCloudLab1" `
-          /o:"8540675-star" `
+          /o:"8540675-star_NetSdrClient" `
           /d:sonar.token="${{ secrets.SONAR_TOKEN }}" `
           /d:sonar.cs.opencover.reportsPaths="**/coverage.xml" `
           /d:sonar.cpd.cs.minimumTokens=40 `
